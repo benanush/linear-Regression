@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib as plt
 from sklearn.linear_model import LinearRegression
 
 st.set_page_config(page_title="Hours vs Marks - Linear Regression")
@@ -56,3 +56,4 @@ st.pyplot(fig)
 # -----------------------------
 st.subheader("📐 Model Equation")
 st.write(f"Marks = {model.coef_[0]:.2f} × Hours + {model.intercept_:.2f}")
+
